@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue basics</title>
+    <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+
+<div class="container pt-5" id="app" >
+    <div class="card center">
+     <h1>{{title}} : {{counter}}</h1>
+    <div>
+       <bustton class="btn primary" v-on:click="counter++">Добивить</bustton>
+        <bustton class="btn danger" v-on:click="counter--">Вычесть</bustton>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="app.js"></script>
+</body>
+</html>
